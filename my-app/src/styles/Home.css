@@ -1,0 +1,297 @@
+/* ===== IMPORT FONTS ===== */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@400;600;700;800;900&display=swap');
+
+/* ===== PAGE BASE ===== */
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 60px 20px 80px;
+    font-family: 'Nunito', sans-serif;
+    background: linear-gradient(160deg, #fff4ec 0%, #ffe0cc 40%, #ffd6e7 80%, #fff0f5 100%);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* ===== BUBBLY BG BLOBS ===== */
+.home::before {
+    content: '';
+    position: fixed;
+    top: -120px;
+    left: -120px;
+    width: 380px;
+    height: 380px;
+    background: radial-gradient(circle, rgba(255, 160, 90, 0.25) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: blobDrift1 8s ease-in-out infinite alternate;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.home::after {
+    content: '';
+    position: fixed;
+    bottom: -100px;
+    right: -100px;
+    width: 340px;
+    height: 340px;
+    background: radial-gradient(circle, rgba(255, 120, 160, 0.22) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: blobDrift2 9s ease-in-out infinite alternate;
+    pointer-events: none;
+    z-index: 0;
+}
+
+@keyframes blobDrift1 {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    100% {
+        transform: translate(40px, 50px) scale(1.15);
+    }
+}
+
+@keyframes blobDrift2 {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    100% {
+        transform: translate(-40px, -40px) scale(1.1);
+    }
+}
+
+/* ===== MOTION WRAPPER ===== */
+.home>div {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 640px;
+    gap: 6px;
+}
+
+/* ===== TYPEWRITER HEADING ===== */
+.home h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: clamp(1.7rem, 5vw, 2.8rem);
+    color: #e8540a;
+    text-shadow:
+        2px 2px 0px rgba(255, 120, 60, 0.25),
+        0 0 30px rgba(255, 100, 60, 0.3);
+    line-height: 1.45;
+    min-height: 4rem;
+    animation: headingBounce 1s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+@keyframes headingBounce {
+    0% {
+        opacity: 0;
+        transform: scale(0.8) translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+/* ===== TYPEWRITER CURSOR ===== */
+.home h1 span {
+    color: #ff6b6b;
+}
+
+/* ===== SUBTITLE ===== */
+.home>div>h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #c2604a;
+    letter-spacing: 0.4px;
+    margin-top: 6px;
+    margin-bottom: 32px;
+    animation: fadeUp 0.8s 0.5s both;
+}
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(14px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== AGE CARD ===== */
+.age-card {
+    background: rgba(255, 255, 255, 0.72);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-radius: 30px;
+    padding: 40px 36px;
+    width: 100%;
+    border: 2.5px solid rgba(255, 140, 80, 0.3);
+    box-shadow:
+        0 8px 40px rgba(255, 100, 60, 0.15),
+        0 2px 12px rgba(255, 160, 100, 0.1),
+        inset 0 0 30px rgba(255, 255, 255, 0.5);
+    animation: cardPop 0.9s 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+    position: relative;
+}
+
+@keyframes cardPop {
+    0% {
+        opacity: 0;
+        transform: scale(0.75) translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+/* dotted top decoration */
+.age-card::before {
+    content: '';
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.2rem;
+    letter-spacing: 6px;
+    white-space: nowrap;
+    animation: floatEmoji 3s ease-in-out infinite alternate;
+}
+
+@keyframes floatEmoji {
+    0% {
+        transform: translateX(-50%) translateY(0);
+    }
+
+    100% {
+        transform: translateX(-50%) translateY(-6px);
+    }
+}
+
+/* ===== CARD HEADINGS ===== */
+.age-card h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.55rem;
+    color: #e8540a;
+    text-shadow: 1px 2px 0 rgba(255, 120, 60, 0.2);
+    margin-bottom: 6px;
+}
+
+.age-card h3 {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: #c2604a;
+    margin-bottom: 28px;
+    letter-spacing: 0.3px;
+}
+
+/* ===== STAT LIST ===== */
+.age-card>p:nth-of-type(-n+6) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 11px 20px;
+    margin: 6px 0;
+    border-radius: 16px;
+    background: linear-gradient(90deg, rgba(255, 235, 220, 0.9), rgba(255, 220, 230, 0.7));
+    border-left: 4px solid #ff7043;
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: #c2390a;
+    transition: transform 0.25s, box-shadow 0.25s;
+    animation: listSlide 0.5s both;
+    text-align: left;
+}
+
+.age-card>p:nth-of-type(1) {
+    animation-delay: 0.4s;
+    border-left-color: #ff7043;
+}
+
+.age-card>p:nth-of-type(2) {
+    animation-delay: 0.5s;
+    border-left-color: #ff8c66;
+}
+
+.age-card>p:nth-of-type(3) {
+    animation-delay: 0.6s;
+    border-left-color: #ffa07a;
+}
+
+.age-card>p:nth-of-type(4) {
+    animation-delay: 0.7s;
+    border-left-color: #ffb347;
+}
+
+.age-card>p:nth-of-type(5) {
+    animation-delay: 0.8s;
+    border-left-color: #ff8fab;
+}
+
+.age-card>p:nth-of-type(6) {
+    animation-delay: 0.9s;
+    border-left-color: #ff6b6b;
+}
+
+@keyframes listSlide {
+    0% {
+        opacity: 0;
+        transform: translateX(-24px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.age-card>p:nth-of-type(-n+6):hover {
+    transform: translateX(6px) scale(1.02);
+    box-shadow: 0 4px 18px rgba(255, 100, 60, 0.2);
+}
+
+/* ===== CLOSING MESSAGES ===== */
+.age-card>p:nth-last-of-type(-n+2) {
+    display: block;
+    font-size: 0.93rem;
+    font-weight: 700;
+    color: #c2604a;
+    margin-top: 18px;
+    line-height: 1.75;
+    padding: 0 6px;
+    text-align: center;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+    .age-card {
+        padding: 32px 18px;
+    }
+
+    .age-card h2 {
+        font-size: 1.25rem;
+    }
+
+    .age-card>p:nth-of-type(-n+6) {
+        font-size: 0.92rem;
+        padding: 9px 14px;
+    }
+
+    .home h1 {
+        min-height: 5rem;
+    }
+}
