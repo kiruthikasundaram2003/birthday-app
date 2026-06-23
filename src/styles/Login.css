@@ -41,7 +41,7 @@
 /* Floating hearts */
 .login-page::before,
 .login-page::after {
-    content: "💖  ✨  💫  🎀  🌸 ❤️ 💕 💝  💗  ✨  💖  🦋  💫  🎀  💖  ✨  🌸 ❤️ 💕 💝 💗  🎀  💖  ✨ 💗 💫  🎀  🌸  💗  ✨  💖  🦋  💫  🎀  💖  ✨  🌸💫  🎀  🌸  💗  ❤️ 💕 💝✨  💖  🦋  💫 ❤️ 💕 💝 🎀  💖  ✨  🌸💫  🎀  🌸  💗  ✨  💖  🦋  ❤️ 💕 💝💫  🎀  💖  ✨  🌸 ";
+    content: "💖  ✨  💫  🎀  🌸 ❤️ 💕  💗  ✨  💖  🦋  💫  🎀  💖  ✨  🌸 ❤️ 💕 💝 💗  🎀  💖  ✨ 💗 💫  🎀  🌸  💗  ✨  💖  🦋  💫  🎀  💖  ✨  🌸💫  🎀  🌸  💗  ❤️ 💕 💝✨  💖  🦋  💫 ❤️ 💕 💝 🎀  💖  ✨  🌸💫  🎀  🌸  💗  ✨  💖  🦋  ❤️ 💕 💝💫  🎀  💖  ✨  🌸 ";
     position: absolute;
     inset: 0;
     font-size: 25px;
