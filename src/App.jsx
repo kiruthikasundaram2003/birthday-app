@@ -32,7 +32,7 @@ function App() {
           <Route path="/surprise" element={<Surprise />} />
 
         </Route>
-        {/* <Route path="*" element={<Countdown />} /> */}
+        <Route path="*" element={<Countdown />} />
       </Routes>
 
       <ToastContainer
