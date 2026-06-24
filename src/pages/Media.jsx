@@ -13,13 +13,13 @@ function Media() {
                 <h2>🎵 Songs 💖</h2>
                 <div>
                     <audio controls>
-                        <source src={`${import.meta.env.BASE_URL}music2.webm`} type="audio/webm" />
+                        <source src="https://res.cloudinary.com/dyabbqxqu/video/upload/v1782291605/music2_hyvasl.webm" type="audio/webm" />
                     </audio>
                 </div>
                 {/* <h2>🎶 Until I Found You 🌸</h2> */}
 
                 <audio controls>
-                    <source src={`${import.meta.env.BASE_URL}music1.webm`} type="audio/webm" />
+                    <source src="https://res.cloudinary.com/dyabbqxqu/video/upload/v1782291437/music1_qewlih.webm" type="audio/webm" />
                 </audio>
 
             </div>

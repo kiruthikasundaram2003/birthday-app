@@ -24,13 +24,13 @@ function Surprise() {
 
             {/* Background Music */}
             <audio autoPlay loop>
-                <source  src={`${import.meta.env.BASE_URL}finalsong.mp3`} type="audio/mp3" />
+                <source  src="https://res.cloudinary.com/dyabbqxqu/video/upload/v1782291676/finalsong_e7sewo.mp3" type="audio/mp3" />
             </audio>
 
             {/* Stars */}
-            <div className="stars">
+            {/* <div className="stars">
                 ✨ ✨ ✨ ✨ ✨
-            </div>
+            </div> */}
 
             {/* Balloons */}
             <div className="balloons">
