@@ -1,11 +1,14 @@
 import "../styles/Home.css";
+import Confetti from "react-confetti";
 import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 import FloatingHearts from "../components/FloatingHearts";
 import { useEffect, useState } from "react";
+import { useWindowSize } from "@uidotdev/usehooks";
+import FireworksEffect from "../components/Fireworks";
 
 function Home() {
-
+  const { width, height } = useWindowSize();
   const birthDate = new Date("2004-06-25T00:00:00");
 
   const [age, setAge] = useState({
@@ -20,11 +23,11 @@ function Home() {
 
       const seconds = Math.floor(diff / 1000);
       const minutes = Math.floor(seconds / 60);
-      const hours   = Math.floor(minutes / 60);
+      const hours = Math.floor(minutes / 60);
       const totalDays = Math.floor(hours / 24);
 
-      let years  = now.getFullYear() - birthDate.getFullYear();
-      let months = now.getMonth()    - birthDate.getMonth();
+      let years = now.getFullYear() - birthDate.getFullYear();
+      let months = now.getMonth() - birthDate.getMonth();
       if (months < 0) { years--; months += 12; }
 
       setAge({ years, months, days: totalDays, hours, minutes, seconds });
@@ -34,7 +37,14 @@ function Home() {
 
   return (
     <div className="home">
+      <FireworksEffect />
 
+      <Confetti
+        width={width}
+        height={height}
+        recycle={true}
+        numberOfPieces={350}
+      />
       <FloatingHearts />
 
       <motion.div

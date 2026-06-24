@@ -11,11 +11,11 @@ function Media() {
             <div className="media-card">
 
                 <h2>🎵 Songs 💖</h2>
-
-                <audio controls>
-                    <source src="/music2.webm" type="audio/mp3" />
-                </audio>
-
+                <div>
+                    <audio controls>
+                        <source src="/music2.webm" type="audio/mp3" />
+                    </audio>
+                </div>
                 {/* <h2>🎶 Until I Found You 🌸</h2> */}
 
                 <audio controls>
