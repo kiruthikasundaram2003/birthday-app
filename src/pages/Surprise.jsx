@@ -24,7 +24,7 @@ function Surprise() {
 
             {/* Background Music */}
             <audio autoPlay loop>
-                <source src="/finalsong.mp3" type="audio/mp3" />
+                <source  src={`${import.meta.env.BASE_URL}finalsong.mp3`} type="audio/mp3" />
             </audio>
 
             {/* Stars */}

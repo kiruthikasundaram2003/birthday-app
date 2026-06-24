@@ -13,13 +13,13 @@ function Media() {
                 <h2>🎵 Songs 💖</h2>
                 <div>
                     <audio controls>
-                        <source src="/music2.webm" type="audio/webm" />
+                        <source src={`${import.meta.env.BASE_URL}music2.webm`} type="audio/webm" />
                     </audio>
                 </div>
                 {/* <h2>🎶 Until I Found You 🌸</h2> */}
 
                 <audio controls>
-                    <source src="/music1.webm" type="audio/webm" />
+                    <source src={`${import.meta.env.BASE_URL}music1.webm`} type="audio/webm" />
                 </audio>
 
             </div>
@@ -31,33 +31,33 @@ function Media() {
                 <h2>💖 Special Moments</h2>
 
                 <video controls>
-                    <source src="/video1.mp4" type="video/mp4" />
+                    <source src={`${import.meta.env.BASE_URL}video1.mp4`} type="video/mp4" />
                 </video>
 
                 {/* <h2>✨ Funny Memories</h2> */}
 
                 <video controls>
-                    <source src="/video2.mp4" type="video/mp4" />
+                    <source src={`${import.meta.env.BASE_URL}video2.mp4`} type="video/mp4" />
                 </video>
 
                 {/* <h2>🌷 College Memories</h2> */}
 
                 <video controls>
-                    <source src="/video3.mp4" type="video/mp4" />
+                    <source src={`${import.meta.env.BASE_URL}video3.mp4`} type="video/mp4" />
                 </video>
 
 
 
                 <video controls>
-                    <source src="/video4.mp4" type="video/mp4" />
+                    <source src={`${import.meta.env.BASE_URL}video4.mp4`} type="video/mp4" />
                 </video>
 
                 <video controls>
-                    <source src="/video5.mp4" type="video/mp4" />
+                    <source src={`${import.meta.env.BASE_URL}video5.mp4`} type="video/mp4" />
                 </video>
 
                 <video controls>
-                    <source src="/video6.mp4" type="video/mp4" />
+                    <source src={`${import.meta.env.BASE_URL}video6.mp4`} type="video/mp4" />
                 </video>
 
             </div>

@@ -3,20 +3,20 @@ import "../styles/Gallery.css";
 function Gallery() {
 
   const images = [
-    "/1.jpeg",
-    "/2.jpeg",
-    "/3.jpeg",
-    "/4.jpeg",
-    "/5.jpeg",
-    "/6.jpeg",
-    "/7.jpeg",
-    "/8.jpeg",
-    "/9.jpeg",
-    "/10.jpeg",
-    "/11.jpeg",
-    "/12.jpeg",
-    "/13.jpeg",
-    "/14.jpeg"
+    `${import.meta.env.BASE_URL}1.jpeg`,
+    `${import.meta.env.BASE_URL}2.jpeg`,
+    `${import.meta.env.BASE_URL}3.jpeg`,
+    `${import.meta.env.BASE_URL}4.jpeg`,
+    `${import.meta.env.BASE_URL}5.jpeg`,
+    `${import.meta.env.BASE_URL}6.jpeg`,
+    `${import.meta.env.BASE_URL}7.jpeg`,
+    `${import.meta.env.BASE_URL}8.jpeg`,
+    `${import.meta.env.BASE_URL}9.jpeg`,
+    `${import.meta.env.BASE_URL}10.jpeg`,
+    `${import.meta.env.BASE_URL}11.jpeg`,
+    `${import.meta.env.BASE_URL}12.jpeg`,
+    `${import.meta.env.BASE_URL}13.jpeg`,
+    `${import.meta.env.BASE_URL}14.jpeg`
   ];
 
   return (
@@ -28,7 +28,7 @@ function Gallery() {
       <div className="gallery-container">
 
         {
-          images.map((image,index)=>(
+          images.map((image, index) => (
 
             <div className="card" key={index}>
 
