@@ -16,7 +16,7 @@ function Quiz() {
             answer: "All of the Above"
         },
         {
-            image: "/6.jpeg",
+            image: `${import.meta.env.BASE_URL}6.jpeg`,
             question: "📸 Etha Photo Yaga Yaduthathu",
             options: ["Bon Bon shop", "Ifruit shop", "Dock and Dine shop"],
             answer: "Ifruit shop"
@@ -27,19 +27,19 @@ function Quiz() {
             answer: "November"
         },
         {
-            image: "/q1.jpeg",
+            image: `${import.meta.env.BASE_URL}q1.jpeg`,
             question: "📸 Etha Photo Yaga Yaduthathu",
             options: ["College", "School Hostel", "My Hostel", "Park"],
             answer: "School Hostel"
         },
         {
-            image: "/q2.jpeg",
+            image: `${import.meta.env.BASE_URL}q2.jpeg`,
             question: "📸 Etha Chocolate yaru kuduthathu , yapa kuduthathu",
             options: ["kiruthika for renikka birthday", "Chirstmas", "Renikka for Kiruthika birthday"],
             answer: "Renikka for Kiruthika birthday"
         },
         {
-            image: "/8.jpeg",
+            image:  `${import.meta.env.BASE_URL}8.jpeg`,
             question: "📸 Etha Photo Yaga Yaduthathu",
             options: ["Bon Bon shop", "Ifruit shop", "Dock and Dine shop"],
             answer: "Ifruit shop"
