@@ -11,12 +11,12 @@ function FireworksEffect() {
 
             rocketsPoint: {
                 min: 0,
-                max: 100
+                max: 50
             },
 
             hue: {
                 min: 0,
-                max: 360
+                max: 300
             },
 
             delay: {
