@@ -23,7 +23,7 @@ function Surprise() {
                 width={width}
                 height={height}
                 recycle={true}
-                numberOfPieces={150}
+                numberOfPieces={550}
             />
 
             <FloatingHearts />

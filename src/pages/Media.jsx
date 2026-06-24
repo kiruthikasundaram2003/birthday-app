@@ -10,7 +10,7 @@ function Media() {
 
             <div className="media-card">
 
-                <h2>🎵 Songs 💖</h2>
+                <h2>🎵 This song says everything  💖</h2>
                 <div>
                     <audio controls>
                         <source src="https://res.cloudinary.com/dyabbqxqu/video/upload/v1782291605/music2_hyvasl.webm" type="audio/webm" />
