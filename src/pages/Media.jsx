@@ -13,13 +13,13 @@ function Media() {
                 <h2>🎵 Songs 💖</h2>
                 <div>
                     <audio controls>
-                        <source src="/music2.webm" type="audio/mp3" />
+                        <source src="/music2.webm" type="audio/webm" />
                     </audio>
                 </div>
                 {/* <h2>🎶 Until I Found You 🌸</h2> */}
 
                 <audio controls>
-                    <source src="/music1.webm" type="audio/mp3" />
+                    <source src="/music1.webm" type="audio/webm" />
                 </audio>
 
             </div>
