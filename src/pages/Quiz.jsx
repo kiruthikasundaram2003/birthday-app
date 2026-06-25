@@ -35,8 +35,8 @@ function Quiz() {
         {
             image: `${import.meta.env.BASE_URL}q2.jpeg`,
             question: "📸 Etha Chocolate yaru kuduthathu , yapa kuduthathu",
-            options: ["kiruthika for renikka birthday", "Chirstmas", "Renikka for Kiruthika birthday"],
-            answer: "Renikka for Kiruthika birthday"
+            options: ["Kiruthika gave chocolate to Renikka on her birthday", "Christmas", "Renikka gave chocolate to Kiruthika on her birthday"],
+            answer: "Renikka gave chocolate to Kiruthika on her birthday"
         },
         {
             image:  `${import.meta.env.BASE_URL}8.jpeg`,
